@@ -1,0 +1,178 @@
+/* Empty. Add your own CSS if you like */
+drawer {
+  display: block;
+  position: fixed;
+  width: 270px;
+  height: 100%;
+  z-index: 100;
+  top:44px;
+  background-color:white;
+}
+drawer .header-menu{
+	margin-top:0px;
+	padding-top:0px;
+}
+drawer .header-menu ion-list .list{
+	padding-top:0px;
+}
+drawer.animate {
+  -webkit-transition: all ease-in-out 400ms;
+  transition: all ease-in-out 400ms;
+}
+drawer.left {
+  -webkit-transform: translate3d(-101%, 0, 0);
+  transform: translate3d(-101%, 0, 0);
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.3);
+}
+
+drawer.right {
+  right: 0;
+  top: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+.drawer-open .drawer-content .pane, .drawer-open .drawer-content .scroll-content {
+  pointer-events: none;
+}
+drawer .item-icon-left .icon{
+	font-size: 24px;
+	padding-bottom: 2px;
+}
+ion-side-menu .current a.item-content,ion-side-menu .clickable.current, drawer .current a.item-content, drawer .clickable.current  {
+ 	color:#343434 !important;
+ }
+drawer .current.item .item-content.activated, drawer .current.item.activated{
+	border-color: rgb(255, 255, 255);
+	background-color: white;
+}
+drawer a.item-content, drawer .clickable{
+	color: #858585;
+	font-size:20px;
+}
+drawer .item-complex .item-content{
+	padding-top:16px;
+	padding-bottom:16px;
+	font-size:20px;
+}
+
+
+/*This section would normally have .platform-android at the front */
+
+.platform-android4_0 drawer.left{
+  box-shadow: none;
+  border-left:0px;
+  border-right:0px;
+}
+.header-menu{
+	top:0px;
+}
+.menu .scroll-content {
+	top: 42px;
+}
+.menu-content{
+	box-shadow: none;
+}
+.drawer-open ion-pane.pane{
+	background-color: rgb(0,0,0);
+}
+.drawer-open view{
+	background-color: rgb(0,0,0);
+}
+.ion-view.pane{
+	transition: opacity .25s ease-in-out;
+  	-moz-transition: opacity .25s ease-in-out;
+  	-webkit-transition: opacity .25s ease-in-out;
+}
+.menu-open ion-view.pane, .drawer-open ion-view.pane{
+	opacity:0.4;
+}
+.bar .title.no-nav{
+	text-align: left;
+	left: 0px !important;
+}
+.bar-stable .button-icon.ion-navicon{
+	margin-left: -20px;
+	padding-right: 100px;
+}
+.bar .title{
+	text-align: left;
+	left: 16px !important;
+}
+.modal-wrapper .bar .title{
+	text-align: center;
+	left: 0px !important;
+}
+.bar .title.title-center{
+	text-align: center;
+	left: 0px !important;
+	right: 0px !important;
+}
+.ion-ios7-arrow-back:before{
+	content:"\f2ca";
+}
+.bar .button.button-icon.ion-ios7-arrow-back:before{
+	font-size: 17px;
+	line-height: 32px;
+	padding-right: 100px;
+}
+
+/*
+.platform-android4_0 drawer.left{
+  box-shadow: none;
+  border-left:0px;
+  border-right:0px;
+}
+.platform-android .header-menu{
+	top:0px;
+}
+.platform-android .menu .scroll-content {
+	top: 42px;
+}
+.platform-android.menu-content{
+	box-shadow: none;
+}
+.platform-android.drawer-open ion-pane.pane{
+	background-color: rgb(0,0,0);
+}
+.platform-android.drawer-open view{
+	background-color: rgb(0,0,0);
+}
+.platform-android ion-view.pane{
+	transition: opacity .25s ease-in-out;
+  	-moz-transition: opacity .25s ease-in-out;
+  	-webkit-transition: opacity .25s ease-in-out;
+}
+.platform-android.menu-open ion-view.pane, .platform-android.drawer-open ion-view.pane{
+	opacity:0.4;
+}
+.platform-android .bar .title.no-nav{
+	text-align: left;
+	left: 0px !important;
+}
+.platform-android .bar-stable .button-icon.ion-navicon{
+	margin-left: -20px;
+	padding-right: 100px;
+}
+.platform-android .bar .title{
+	text-align: left;
+	left: 16px !important;
+}
+.platform-android .modal-wrapper .bar .title{
+	text-align: center;
+	left: 0px !important;
+}
+.platform-android .bar .title.title-center{
+	text-align: center;
+	left: 0px !important;
+	right: 0px !important;
+}
+.platform-android .ion-ios7-arrow-back:before{
+	content:"\f2ca";
+}
+.platform-android .bar .button.button-icon.ion-ios7-arrow-back:before{
+	font-size: 17px;
+	line-height: 32px;
+	padding-right: 100px;
+}
+*/
+

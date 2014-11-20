@@ -1,0 +1,29 @@
+<ion-side-menus>
+
+  <ion-nav-bar align-title="left" class="bar-stable nav-title-android">
+    <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-pane drawer-menu-content>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <drawer side="left" canDrag="true">
+      <ion-content class="header-menu">
+      <ion-list>
+        <ion-item nav-clear menu-and-drawer-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </drawer>
+</ion-side-menus>

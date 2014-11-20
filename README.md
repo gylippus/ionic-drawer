@@ -2,6 +2,8 @@ Note: This is an Android Drawer 'Hack' based on a blank sidemenu seed project
 Warning: I have only been using Angular for 14 weeks. I may be doing things wrong but this worked and Google approved it in a review to be featured
 Disclaimer: I haven't added this repo as something I can update frequently, nor as a copy and paste solution. It exists as a starting point for somethig better to come of it from the Drifty team.
 
+Documents that have been modified from the original seed project have been commented with `Drawer Change`
+
 For my app, I kept the drawer functionality seperate for Android only. This is what you see in this repository. I would have started these instructions here:
 1. Create 'merges/android' directory
 2. Copy menu.html template into this directory
